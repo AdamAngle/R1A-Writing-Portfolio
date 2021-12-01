@@ -1,0 +1,80 @@
+@font-face {
+    font-family: ptSerif;
+    src: url("/font/PTSerif-Regular.ttf");
+}
+
+html {
+    font-family: ptSerif;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    max-height: fit-content;
+    min-height: fit-content;
+    text-align: center;
+    z-index: -1;
+    background-image: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) ), url("/assets/parchment.jpg");
+    background-color: #fafafa;
+}
+
+header::after {
+    content: " ";
+    display: block;
+    height: 45px;
+    background-image: url('/assets/pageborder.png');
+    bottom: -15px;
+    width: 300%;
+    left: -500px;
+}
+
+header > .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 40rem) {
+    header > * {
+        height: 40vh;
+    }
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 768px) {
+    .container {
+      width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+      width: 960px;
+    }
+}
+/* @media (min-width: 1200px) {
+    .container {
+      width: 1140px;
+    }
+} */
+
+
+/* Text decoration classes */
+
+.ta-c { text-align: center; }
+.ta-r { text-align: right; }
+.ta-l { text-align: left; }
+
+.mt-0 { margin-top: 0; }
