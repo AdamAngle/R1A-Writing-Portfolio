@@ -91,6 +91,14 @@ header > .header-content {
     min-height: calc(fit-content + 4rem);
 }
 
+.col-full {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .col-half {
     grid-column: span 1;
     display: flex;
