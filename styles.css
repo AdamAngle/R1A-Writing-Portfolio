@@ -90,10 +90,11 @@ header > .header-content {
     grid-gap: 2em;
     -ms-grid-gap: 2em;
     min-height: calc(fit-content + 4rem);
-    margin: 12em 0;
+    padding: 12em 0;
 }
 
 .col-full {
+    width: 100%;
     grid-column: span 2;
     -ms-grid-column: span 2;
     display: flex;
@@ -103,6 +104,7 @@ header > .header-content {
 }
 
 .col-half {
+    width: 100%;
     grid-column: span 1;
     -ms-grid-column: span 2;
     display: flex;
@@ -119,6 +121,18 @@ header > .header-content {
     border-radius: 2px;
     box-shadow: 0 5px 14px rgba(0,0,0,.7);
     padding: 1em;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.glass-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 5px 14px rgba(0,0,0,.7);
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .par-indent {
@@ -146,9 +160,26 @@ header > .header-content {
 /* Custom padding */
 
 .p-paragraph {
-    margin: 12em 0;
+    padding: 12em 0;
 }
 
 .p-sentences {
     margin: 12em 0;
+}
+
+/* Parallax */
+
+.plx {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.plx-wp1 {
+    background-image: url("/assets/antigua.jpg");
+}
+
+.plx-wp2 {
+    background-image: url("/assets/moon.webp");
 }
