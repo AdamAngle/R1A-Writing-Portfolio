@@ -87,8 +87,8 @@ header > .header-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2em;
-    height: 80vh;
     min-height: calc(fit-content + 4rem);
+    margin: 12em 0;
 }
 
 .col-full {
@@ -137,3 +137,13 @@ header > .header-content {
 .m-0 { margin: 0; }
 
 .font-14r { font-size: 1.35rem; }
+
+/* Custom padding */
+
+.p-paragraph {
+    margin: 12em 0;
+}
+
+.p-sentences {
+    margin: 12em 0;
+}
