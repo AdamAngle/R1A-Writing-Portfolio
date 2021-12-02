@@ -85,13 +85,26 @@ header > .header-content {
 
 /* CSS grid */
 .row {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
-    -ms-grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2em;
     -ms-grid-gap: 2em;
+    grid-gap: 2em;
     min-height: calc(fit-content + 4rem);
     padding: 12em 0;
+}
+
+@media (max-width: 992px) {
+    .row {
+        grid-template-columns: repeat(1, 1fr);
+        -ms-grid-columns: repeat(1, 1fr) !important;
+    }
+
+    .col-full {
+        -ms-grid-column: span 1 !important;
+        grid-column: span 1 !important;
+    }
 }
 
 .col-full {
@@ -140,12 +153,6 @@ header > .header-content {
     text-indent: 50px;
 }
 
-@media (max-width: 992px) {
-    .row {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
 footer {
     width: 100%;
     background: #303030;
@@ -161,6 +168,7 @@ footer {
 .ta-r { text-align: right; }
 .ta-l { text-align: left; }
 .mt-2 { margin-top: 2em; }
+.td-n { color: white; }
 
 .mt-0 { margin-top: 0; }
 .m-0 { margin: 0; }
