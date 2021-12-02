@@ -20,20 +20,21 @@ header {
     max-height: fit-content;
     min-height: fit-content;
     text-align: center;
-    z-index: -1;
+    z-index: 1000;
     background-image: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) ), url("/assets/parchment.jpg");
     background-color: #fafafa;
 }
 
-header::after {
+/* header::after {
     content: " ";
     display: block;
     height: 45px;
+    margin: -45px;
     background-image: url('/assets/pageborder.png');
     bottom: -15px;
     width: 300%;
     left: -500px;
-}
+} */
 
 header > .header-content {
     display: flex;
@@ -182,4 +183,21 @@ header > .header-content {
 
 .plx-wp2 {
     background-image: url("/assets/moon.webp");
+}
+
+.plx-rs {
+    background-image: url("/assets/wood.jpg");
+}
+
+.plx-pm {
+    background-image: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) ), url("/assets/parchment.jpg");
+}
+
+
+.plx-gradient {
+    background: rgb(72,172,246);
+    background: -moz-linear-gradient(45deg, rgba(72,172,246,1) 0%, rgba(127,255,182,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(72,172,246,1) 0%, rgba(127,255,182,1) 100%);
+    background: linear-gradient(45deg, rgba(72,172,246,1) 0%, rgba(127,255,182,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#48acf6",endColorstr="#7fffb6",GradientType=1);
 }
