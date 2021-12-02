@@ -146,6 +146,15 @@ header > .header-content {
     }
 }
 
+footer {
+    width: 100%;
+    background: #303030;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    color: lightgray;
+}
+
 /* Text decoration */
 
 .ta-c { text-align: center; }
