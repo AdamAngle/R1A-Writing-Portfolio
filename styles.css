@@ -86,13 +86,16 @@ header > .header-content {
 .row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    -ms-grid-template-columns: repeat(2, 1fr);
     grid-gap: 2em;
+    -ms-grid-gap: 2em;
     min-height: calc(fit-content + 4rem);
     margin: 12em 0;
 }
 
 .col-full {
     grid-column: span 2;
+    -ms-grid-column: span 2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,6 +104,7 @@ header > .header-content {
 
 .col-half {
     grid-column: span 1;
+    -ms-grid-column: span 2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,6 +136,7 @@ header > .header-content {
 .ta-c { text-align: center; }
 .ta-r { text-align: right; }
 .ta-l { text-align: left; }
+.mt-2 { margin-top: 2em; }
 
 .mt-0 { margin-top: 0; }
 .m-0 { margin: 0; }
